@@ -10,4 +10,5 @@ Rails.application.routes.draw do
     patch '/books/:id', to: "books#update"
     
     get '/authors', to: 'authors#index', as: 'authors'
+    get '/authors/:id', to: 'authors#show', as: 'author'
 end
