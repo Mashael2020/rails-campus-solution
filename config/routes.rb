@@ -8,4 +8,6 @@ Rails.application.routes.draw do
     delete '/books/:id', to: "books#destroy"
     post '/books', to: "books#create"
     patch '/books/:id', to: "books#update"
+    
+    get '/authors', to: 'authors#index', as: 'authors'
 end

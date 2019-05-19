@@ -1,0 +1,11 @@
+<h1>Authors Index</h1>
+
+<table>
+    <% @authors.each do |author | %>
+        <tr>
+            <td> <%= author.first_name %> </td>
+            <td> <%= author.last_name %> </td>
+            <td> <%= author.location %> </td>
+        </tr>
+    <% end %>
+</table>
