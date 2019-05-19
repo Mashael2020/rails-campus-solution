@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     
     get '/authors', to: 'authors#index', as: 'authors'
     get '/authors/:id', to: 'authors#show', as: 'author'
+    delete '/authors/:id', to: "authors#destroy"
+
 end
