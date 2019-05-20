@@ -19,6 +19,6 @@
 <h2>
     <%= @author.age %>
 </h2>
-
+<p> <%= link_to 'View Books', author_books_path(@author) %> </p>
 <p> <%= link_to 'Edit', edit_author_path(@author) %> </p>
 <p> <%= link_to 'Delete', author_path(@author), method: :delete, data: {confirm: "Are you sure?"} %> </p>
