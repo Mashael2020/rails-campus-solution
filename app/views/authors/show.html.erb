@@ -8,5 +8,9 @@
     <%= @author.location %>
 </h2>
 
+<h2>
+    <%= @author.nickname %>
+</h2>
+
 <p> <%= link_to 'Edit', edit_author_path(@author) %> </p>
 <p> <%= link_to 'Delete', author_path(@author), method: :delete, data: {confirm: "Are you sure?"} %> </p>
